@@ -12,5 +12,11 @@ namespace Lab2.Controllers
         {
             return View();
         }
+        public IActionResult Details(string category)
+        {
+            ViewBag.category = category;
+
+            return View();
+        }
     }
 }
